@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+main{
+    margin: 3em;
+}
+
+
+#headabout{
+    padding-bottom: 3em;
+    align-items: center;
+    
+}
+
+#headabout>div>div>h2{
+    text-align: left;
+}
+
+.back{
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+}
+
+.back > img{
+
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    width: 100%;
+    height: 20em;
+    background-color: #9299ad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
