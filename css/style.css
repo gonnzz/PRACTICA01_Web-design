@@ -6,17 +6,20 @@
 
 }
 
+header{
+    border-style: solid;
+    border-color: black;
+}
+
 #head{
     margin: 1em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
-#logo{
-
-}
 
 #logo img {
     height: 6em;
@@ -24,6 +27,10 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+}
+
+#head_title h1{
+    font-size: 4em;
 }
 
 #menu{
@@ -34,16 +41,26 @@
     
 }
 
+.nav-link {
+    color: black;
+    font-size: 2em;
+}
+
 .nav-link:hover {
+    color: white;
     background-color: #9299ad
 }
-background-color: #9299ad
+
 
 main{
     margin: 3em;
 }
 
-.title > h1{
+#title{
+    background-image: url(media/Logo_parlstudio.png);
+}
+
+#title > h1{
     font-size: 8em;
     margin-left: 8%;
     margin-right: 20%;
