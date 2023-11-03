@@ -6,9 +6,15 @@
 
 }
 
+/* HEADER (MENU) */
+
 header{
-    border-style: solid;
-    border-color: black;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: #dddddd;
 }
 
 #head{
@@ -30,7 +36,7 @@ header{
 }
 
 #head_title h1{
-    font-size: 4em;
+    font-size: 3em;
 }
 
 #menu{
@@ -41,28 +47,74 @@ header{
     
 }
 
+.nav-item {
+    margin: 1em;
+}
+
 .nav-link {
     color: black;
     font-size: 2em;
+    border-style: solid;
+    border-width: thin;
 }
 
 .nav-link:hover {
+    color: black;
+    border-style: none;
+    background-color: #9299ad
+}
+
+/* MAIN */
+
+main{
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: 12%;
+}
+
+
+#title > h1{
+    font-size: 8em;
+}
+
+.title_buton {
+    color: black;
+    font-size: 2em;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding-left: 0;
+}
+
+.title_buton:hover {
     color: white;
     background-color: #9299ad
 }
 
-
-main{
-    margin: 3em;
+#title_buton {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
 }
 
-#title{
-    background-image: url(media/Logo_parlstudio.png);
+#intro {
+    margin-top: 8%;
 }
 
-#title > h1{
-    font-size: 8em;
-    margin-left: 8%;
-    margin-right: 20%;
-    margin-top: 12%;
+#card {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.card:hover {
+    
+    border-color: black;
+}
+
+.card-title {
+    font-style: italic;
+    font-weight: bold;
 }
