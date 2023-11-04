@@ -17,34 +17,21 @@ header{
     background-color: #dddddd;
 }
 
-#head{
-    margin: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    
-}
 
 
-#logo img {
-    height: 6em;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+#head_title a{
+    font-size: 2em;
     align-items: center;
 }
 
-#head_title h1{
-    font-size: 3em;
+.nav{
+    justify-content: center;
 }
 
-#menu{
-    display: flex;
+#navbarNav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    
 }
 
 .nav-item {
@@ -100,8 +87,10 @@ main{
 
 /* INTRO */
 
-#intro {
+.intro {
     margin-top: 8%;
+    width: 100%;
+    height: 80vh;
 }
 
 #card {
