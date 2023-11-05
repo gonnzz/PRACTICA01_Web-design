@@ -6,6 +6,51 @@
 
 }
 
+/* HEADER (MENU) */
+
+header{
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: #dddddd;
+}
+
+
+
+#head_title a{
+    font-size: 2em;
+    align-items: center;
+}
+
+.nav{
+    justify-content: center;
+}
+
+#navbarNav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 1em;
+}
+
+.nav-link {
+    color: black;
+    font-size: 2em;
+    border-style: solid;
+    border-width: thin;
+}
+
+.nav-link:hover {
+    color: black;
+    border-style: none;
+    background-color: #9299ad
+}
+
 
 main{
     margin: 3em;
