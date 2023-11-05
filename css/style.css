@@ -3,7 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    scroll-behavior: smooth;
 
+}
+
+a{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* HEADER (MENU) */
@@ -16,7 +26,6 @@ header{
     width: 100%;
     background-color: #dddddd;
 }
-
 
 
 #head_title a{
@@ -52,8 +61,11 @@ header{
 }
 
 
+
+
 main{
     margin: 3em;
+    padding-top: 4.5em;
 }
 
 
@@ -79,6 +91,171 @@ main{
     height: auto;
 }
 
+
+/* CONÓCENOS */
+
+#conocenos {
+    width: 100%;
+    
+}
+
+#choose {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 6em;
+    align-items: center;
+    background-color: var(--cream);
+
+}
+
+#choose>div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+
+}
+
+#choose>div>a {
+
+    width: 30%;
+    height: 70%;
+    margin: 1.5em;
+    
+    opacity: 100%;
+
+
+
+}
+
+#choose>div>a:hover {
+
+    transform: scale(1.15);
+
+}
+
+#choose>div>a>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+#choose>div>a>div>h3 {
+    font-size: 1.5em;
+    font-family: 'Merriweather';
+    padding-bottom: 1em;
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+}
+
+#dan,
+#gon {
+
+    position: relative;
+
+}
+
+#dan::before {
+
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../media/DANIEL.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 1;
+
+
+
+
+}
+
+#gon::before {
+
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../media/GONZALO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 1;
+
+
+
+
+}
+
+
+
+.daninfo,
+.goninfo {
+
+    width: 100%;
+    padding-left: none;
+    padding-right: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    justify-content: center;
+    background-color: var(--grey);
+}
+
+
+.daninfo>div,
+.goninfo >div {
+    width: 30%;
+    padding: 2em;
+
+}
+
+
+#danielimg,
+#gonimg {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 3em;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3em;
+    justify-content: center;
+
+}
+
+#danielimg>div,
+#gonimg>div{
+
+    width: 28%;
+    padding-right: 1em;
+
+}
+
+#danielimg>div>img,
+#gonimg>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 footer{
     width: 100%;
     height: 20em;
@@ -87,5 +264,216 @@ footer{
     align-items: center;
     justify-content: center;
    
+
+}
+
+
+/* MEDIA QUERIES CINE */
+
+@media screen and (max-width: 1800px) {
+
+    .daninfo>div,
+    .goninfo>div {
+        width: 20%;
+    }
+
+ 
+}
+
+@media screen and (max-width: 1600px) {
+
+    #choose>div>a {
+        width: 30%;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1630px) {
+
+    #danielimg>div,
+    #gonimg>div{
+
+        width: 35%;
+
+    }
+
+    .directores>div>div>p{
+        font-size: 1.15em;
+    }
+}
+
+@media screen and (max-width: 1475px) {
+
+    #danielimg>div,
+    #gonimg>div{
+
+        width: 40%;
+
+    }
+
+   
+}
+
+@media screen and (max-width: 1275px) {
+
+    #danielimg>div,
+    #gonimg>div {
+
+        width: 45%;
+
+    }
+
+   
+}
+
+
+@media screen and (max-width: 1135px) {
+
+    #danielimg, #gonimg {
+        padding: 0em;
+    }
+
+    #danielimg, #gonimg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #danielimg>div,
+    #gonimg>div {
+
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+
+    }
+
+    #danielimg>div>h1,
+    #gonimg>div>h1 {
+
+        padding-bottom: 0.5em;
+
+    }
+
+
+
+   
+}
+
+
+@media screen and (max-width: 683px) {
+
+ 
+
+    #danielimg>div,
+    #gonimg>div {
+
+        width: 90%;
+        
+
+    }
+
+    #danielimg>div>h1,
+    #gonimg>div>h1 {
+
+        font-size: 2em;
+
+    }
+
+    #danielimg, #gonimg {
+        padding: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    #choose>div {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #choose>div>a{
+        width: 60%;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 490px) {
+
+    
+
+    #danielimg>div,
+    #gonimg>div {
+
+        width: 95%;
+        
+
+    }
+
+    #danielimg>div>h1,
+    #gonimg>div>h1 {
+
+        font-size: 1.7em;
+
+    }
+
+    .directores>div>div>p{
+        font-size: 1em;
+    }
+
+    #choose>div>a:hover {
+
+        transform: scale(1);
+    
+    }
+
+    #choose>h1 {
+        font-size: 1.3em;
+    }
+
+    #choose>div>a{
+        width: 70%;
+        margin: 0.5em;
+    }
+
+}
+
+@media screen and (max-width: 355px) {
+
+    #danielimg>div>h1,
+    #gonimg>div>h1 {
+
+        font-size: 1.5em;
+
+    }
+
+    #choose>div>a{
+        width: 85%;
+        margin: 0.5em;
+    }
+
+
+}
+
+@media screen and (max-width: 315px) {
+
+    #danielimg>div>h1,
+    #gonimg>div>h1 {
+
+        font-size: 1.3em;
+
+    }
+
 
 }
