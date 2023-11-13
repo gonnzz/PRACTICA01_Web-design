@@ -83,6 +83,7 @@ main{
     width: 100%;
     height: 45vh;
     overflow: hidden;
+    
 }
 
 .back > img{
@@ -172,7 +173,7 @@ main{
     bottom: 0px;
     left: 0px;
     background-image: url(../media/DANIEL.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -192,7 +193,7 @@ main{
     bottom: 0px;
     left: 0px;
     background-image: url(../media/GONZALO.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -283,7 +284,7 @@ footer{
 @media screen and (max-width: 1600px) {
 
     #choose>div>a {
-        width: 30%;
+        width: 70%;
     }
 
 
@@ -373,6 +374,7 @@ footer{
     #gonimg>div {
 
         width: 90%;
+        height: 45%;
         
 
     }
@@ -398,14 +400,19 @@ footer{
     }
 
     #choose>div>a{
-        width: 60%;
+        width: 80%;
     }
 
 }
 
+@media screen and (max-width: 536px) {
 
+    #headabout>.row>div{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 
-
+}
 
 
 
@@ -428,8 +435,11 @@ footer{
 
     }
 
-    .directores>div>div>p{
-        font-size: 1em;
+   
+
+    #choose>div {
+
+        height: 70vh;
     }
 
     #choose>div>a:hover {
@@ -439,15 +449,34 @@ footer{
     }
 
     #choose>h1 {
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
 
     #choose>div>a{
-        width: 70%;
+        width: 90%;
         margin: 0.5em;
     }
 
 }
+
+@media screen and (max-width: 400px) {
+
+    main{
+        margin: 1.5em;
+        padding-top: 4.5em;
+    }
+}
+
+@media screen and (max-width: 383px) {
+    main{
+        margin: 1.5em;
+        padding-top: 6em;
+    }
+    
+
+
+}
+
 
 @media screen and (max-width: 355px) {
 
