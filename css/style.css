@@ -165,3 +165,29 @@ main{
     align-items: center;
 }
 
+/* FOOTER */
+
+footer {
+    padding: 2em;
+    
+    background-color: #9299ad;
+
+}
+
+
+#h1_footer h1 {
+    padding-top: 5%;
+    font-size: 8em;
+}
+
+
+#headabout{
+    padding-bottom: 3em;
+    align-items: center;
+    
+}
+
+#headabout>div>div>h2{
+    text-align: left;
+}
+
