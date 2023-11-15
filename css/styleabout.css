@@ -92,6 +92,25 @@ main{
     height: auto;
 }
 
+/* CARRUSEL */
+
+.carrusel{
+    
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+   
+}
+
+#carouselExampleCaptions{
+    
+    width: 35%;
+
+   
+}
+
 
 /* CONÓCENOS */
 
@@ -295,20 +314,32 @@ footer>div>figure {
 
 }
 
+/* FOOTER */
 
 
-footer>h3 {
-    display: flex;
-    justify-content: center;
-    color: var(--white);
-    font-size: 1em;
+
+footer {
+    padding: 2em;
+    
+    background-color: #9299ad;
+
 }
 
-footer>h4 {
-    display: flex;
-    justify-content: center;
-    color: var(--white);
-    font-size: small;
+
+#h1_footer h1 {
+    padding-top: 5%;
+    font-size: 8em;
+}
+
+
+#headabout{
+    padding-bottom: 3em;
+    align-items: center;
+    
+}
+
+#headabout>div>div>h2{
+    text-align: left;
 }
 
 
@@ -408,6 +439,30 @@ footer>h4 {
    
 }
 
+@media screen and (max-width: 1135px) {
+
+    .carrusel{
+    
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2em;
+    
+       
+    }
+    
+    #carouselExampleCaptions{
+        
+        width: 55%;
+    
+       
+    }
+
+
+
+   
+}
+
+
 
 @media screen and (max-width: 683px) {
 
@@ -448,6 +503,18 @@ footer>h4 {
 
 }
 
+@media screen and (max-width: 700px) {
+
+    #carouselExampleCaptions{
+        
+        width: 75%;
+    
+       
+    }
+
+}
+
+
 @media screen and (max-width: 540px) {
    
     footer>h3, 
@@ -467,6 +534,23 @@ footer>h4 {
     #headabout>.row>div{
         padding-top: 1em;
         padding-bottom: 1em;
+    }
+
+    .carrusel{
+    
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2em;
+        padding-top: 2em;
+    
+       
+    }
+    
+    #carouselExampleCaptions{
+        
+        width: 75%;
+    
+       
     }
 
 }
@@ -534,6 +618,13 @@ footer>h4 {
     main{
         margin: 1.5em;
         padding-top: 6em;
+    }
+
+    #carouselExampleCaptions{
+        
+        width: 95%;
+    
+       
     }
     
 
