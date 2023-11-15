@@ -185,6 +185,12 @@ main{
     padding: 0%;
 }
 
+
+
+.card {
+    width: 24rem;
+}
+
 #card_work {
     display: flex;
     align-items: center;
@@ -218,6 +224,20 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 970px) {
+
+    #title > h1{
+        font-size: 5em;
+    }
+
+    #row_card {
+        display: block;
+    }
+
+   
+}
+
+
 @media screen and (max-width: 590px) {
 
     #title > h1{
@@ -248,6 +268,10 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+    .card {
+        width: 22rem;
+    }
    
 }
 
@@ -258,5 +282,18 @@ footer {
         font-size: 4em;
     }
 
+    .card {
+        width: 18rem;
+    }
    
 }
+
+@media screen and (max-width: 340px) {
+
+    .card {
+        width: 16rem;
+    }
+   
+}
+
+
