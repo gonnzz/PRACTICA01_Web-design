@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+    scroll-behavior: smooth;
+    
+
+}
+
+/* HEADER (MENU) */
+
+header{
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: #dddddd;
+}
+
+
+
+#head_title a{
+    font-size: 2em;
+    align-items: center;
+}
+
+.nav{
+    justify-content: center;
+}
+
+#navbarNav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 1em;
+}
+
+.nav-link {
+    color: black;
+    font-size: 2em;
+    border-style: solid;
+    border-width: thin;
+}
+
+.nav-link:hover {
+    color: black;
+    border-style: none;
+    background-color: #9299ad
+}
+
+/* MAIN */
+
+main{
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: 12%;
+}
+
+
+#title > h1{
+    font-size: 8em;
+}
+
+.title_buton {
+    color: black;
+    font-size: 2em;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding-left: 0;
+}
+
+.title_buton:hover {
+    color: white;
+    background-color: #9299ad
+}
+
+#title_buton {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+/* INTRO */
+
+.intro {
+    margin-top: 8%;
+    width: 100%;
+    height: 80vh;
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.card:hover {
+    
+    border-color: black;
+}
+
+.card-title {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* NUESTRO ADN */
+
+.adn {
+    width: 100%;
+    margin-bottom: 5%;
+    
+}
+
+.adn .row h1 {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.adn .row .col {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+}
+
+.btn_down {
+    color: black;
+    font-size: 2em;
+    padding-left: 0;
+}
+
+.btn_down:hover {
+    color: #9299ad;
+    
+}
+
+#btn_down {
+    margin-bottom: 5%;
+    
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: end;
+}
+
+/* WORKS */
+
+.carrusel{
+    
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+   
+
+   
+}
+
+#carouselExampleCaptions{
+    
+    width: 100%;
+    height: 50%;    
+
+   
+}
+
+.btn-primary {
+    --bs-btn-bg: 0;
+    --bs-btn-border-color: 0;
+    --bs-btn-hover-bg: 0;
+    --bs-btn-hover-border-color: 0;
+    --bs-btn-active-bg: 0;
+    --bs-btn-active-border-color: 0;
+    --bs-btn-disabled-bg: 0;
+    --bs-btn-disabled-border-color: 0;
+    padding: 0%;
+}
+
+
+
+.card {
+    width: 24rem;
+}
+
+#card_work {
+    display: flex;
+    align-items: center;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 2em;
+    
+    background-color: #9299ad;
+
+}
+
+
+#h1_footer h1 {
+    padding-top: 5%;
+    font-size: 8em;
+}
+
+
+#headabout{
+    padding-bottom: 3em;
+    align-items: center;
+    
+}
+
+#headabout>div>div>h2{
+    text-align: left;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 970px) {
+
+    #title > h1{
+        font-size: 5em;
+    }
+
+    #row_card {
+        display: block;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 590px) {
+
+    #title > h1{
+        font-size: 5em;
+    }
+
+   
+}
+
+@media screen and (max-width: 540px) {
+
+    #h1_footer h1 {
+        padding-top: 5%;
+        font-size: 6em;
+    }
+
+   
+}
+
+@media screen and (max-width: 470px) {
+
+    #title > h1{
+        font-size: 3em;
+        margin-top: 40%;
+    }
+
+    .adn .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 22rem;
+    }
+
+    .carrusel{
+    
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2em;
+        padding-top: 20%;
+       
+    
+       
+    }
+   
+}
+
+@media screen and (max-width: 400px) {
+
+    #h1_footer h1 {
+        padding-top: 5%;
+        font-size: 4em;
+    }
+
+    .card {
+        width: 18rem;
+    }
+
+    .carrusel{
+    
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2em;
+        padding-top: 40%;
+       
+    
+       
+    }
+   
+}
+
+@media screen and (max-width: 340px) {
+
+    .card {
+        width: 16rem;
+    }
+
+  
+   
+}
+
+
