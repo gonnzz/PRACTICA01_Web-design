@@ -5,9 +5,7 @@
     font-family: 'Courier New', Courier, monospace;
 
     scroll-behavior: smooth;
-    transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: ease;
+    
 
 }
 
@@ -162,6 +160,7 @@ main{
     display: flex;
     justify-content: center;
     padding-bottom: 2em;
+    padding-top: 2em;
    
 
    
@@ -274,6 +273,17 @@ footer {
     .card {
         width: 22rem;
     }
+
+    .carrusel{
+    
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2em;
+        padding-top: 20%;
+       
+    
+       
+    }
    
 }
 
@@ -287,6 +297,17 @@ footer {
     .card {
         width: 18rem;
     }
+
+    .carrusel{
+    
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2em;
+        padding-top: 40%;
+       
+    
+       
+    }
    
 }
 
@@ -295,6 +316,8 @@ footer {
     .card {
         width: 16rem;
     }
+
+  
    
 }
 
