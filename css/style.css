@@ -162,13 +162,15 @@ main{
     display: flex;
     justify-content: center;
     padding-bottom: 2em;
+   
 
    
 }
 
 #carouselExampleCaptions{
     
-    width: 50%;
+    width: 100%;
+    height: 50%;    
 
    
 }
